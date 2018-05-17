@@ -1,5 +1,3 @@
-require 'pry'
-
 class Song
 
   attr_reader :name, :artist, :genre
@@ -46,6 +44,7 @@ class Song
 
   def self.genre_count
     @@genre_hash.reverse_each.to_h
+    
   end
 
   def self.artist_count
